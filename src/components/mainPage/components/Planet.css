@@ -7,7 +7,7 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  background:  #1e1e20;
+  background: #1e1e20;
   position: absolute;
   z-index: 1;
   right: 230px;
@@ -70,6 +70,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
+  user-select: none;
 }
 .second-circle .speed__range {
   position: absolute;
@@ -88,7 +89,6 @@
   animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-
 }
 @keyframes fillup {
   to {
@@ -108,35 +108,34 @@
   stroke-width: 0.15;
   stroke-dasharray: 0 100;
 }
-.first-circle:hover img{
+.first-circle:hover img {
   position: absolute;
   z-index: 100;
 }
-.second-circle::before{
-  content: '';
+.second-circle::before {
+  content: "";
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #E75626;
+  background: #e75626;
   right: -2.95px;
   position: absolute;
 }
-.second-circle::after{
-  content: '';
+.second-circle::after {
+  content: "";
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #E75626;
+  background: #e75626;
   top: -2.3px;
   position: absolute;
-
 }
-.third-circle::after{
-  content: '';
+.third-circle::after {
+  content: "";
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #E75626;
+  background: #e75626;
   bottom: -2.3px;
   position: absolute;
   z-index: 10;
