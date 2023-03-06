@@ -1,0 +1,10 @@
+.main-btn {
+  height: 38px;
+  background: #e75626;
+  border-radius: 30px;
+  padding: 10px 24px 6px;
+  display: flex;
+  align-items: center;
+  font-family: "Bebas Neue";
+  font-size: 24px;
+}

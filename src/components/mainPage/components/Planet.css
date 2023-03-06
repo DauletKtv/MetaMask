@@ -1,0 +1,143 @@
+.first-circle {
+  height: 526px;
+  width: 526px;
+  border: 1px #171719 solid;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background:  #1e1e20;
+  position: absolute;
+  z-index: 1;
+  right: 230px;
+  background-blend-mode: luminosity;
+}
+.second-circle {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 486px;
+  height: 486px;
+  border-radius: 50%;
+}
+.third-circle {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 446px;
+  height: 446px;
+  border-radius: 50%;
+  background: #212124;
+}
+.fourth-circl {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 384px;
+  height: 384px;
+  border: 1px solid #323232;
+  border-radius: 50%;
+}
+.fiveth-circle {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  border: 1px solid #323232;
+}
+.six-circle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  color: #e75626;
+}
+.six-circle img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  transition: all 3s ease-out;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.second-circle .speed__range {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  background: transparent;
+  transform: rotate(270deg);
+}
+
+.fill-circle {
+  animation-name: fillup;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+@keyframes fillup {
+  to {
+    stroke-dasharray: 50.1 100;
+  }
+}
+.circle-1 {
+  fill: transparent;
+  stroke: unset;
+  stroke-width: 0.2;
+  stroke-dasharray: 50 100;
+}
+
+.circle-2 {
+  fill: transparent;
+  stroke: #e75626;
+  stroke-width: 0.15;
+  stroke-dasharray: 0 100;
+}
+.first-circle:hover img{
+  position: absolute;
+  z-index: 100;
+}
+.second-circle::before{
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #E75626;
+  right: -2.95px;
+  position: absolute;
+}
+.second-circle::after{
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #E75626;
+  top: -2.3px;
+  position: absolute;
+
+}
+.third-circle::after{
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #E75626;
+  bottom: -2.3px;
+  position: absolute;
+  z-index: 10;
+}

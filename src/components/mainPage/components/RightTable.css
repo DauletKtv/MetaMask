@@ -1,0 +1,52 @@
+.RightTable .RightTable-header {
+  width: 644px;
+  height: 37px;
+  font-size: 36px;
+  line-height: 120%;
+  font-family: "Bebas Neue";
+  margin-bottom: 35px;
+}
+.RightTable-th {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 100;
+  color: #ffffff;
+}
+.RightTable-tr {
+  height: 50px;
+  border-bottom: 1px white solid;
+}
+.RightTable-tbody {
+  scrollbar-color: #e75626 white; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: 3px;
+  margin: 0;
+}
+.RightTable-tbody ::-webkit-scrollbar {
+  width: 3px;
+  height: 16px;
+  background-color: #e75626;
+}
+
+.RightTable-tbody {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.RightTable-tbody::-webkit-scrollbar {
+  width: 20px;
+}
+
+.RightTable-tbody::-webkit-scrollbar-track {
+  background: white;
+  border-left: 9px solid #171719;
+  border-right: 9px solid #171719;
+}
+
+.RightTable-tbody::-webkit-scrollbar-thumb {
+  background: #e75626;
+  border-left: 7px solid #171719;
+  border-right: 7px solid #171719;
+  border-radius: 99999px;
+}
