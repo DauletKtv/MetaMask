@@ -25,7 +25,7 @@ const config: Config = {
 };
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/MetaMask">
     <Provider store={store}>
       <DAppProvider config={config}>
         <App />
