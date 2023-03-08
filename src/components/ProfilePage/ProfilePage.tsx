@@ -8,7 +8,7 @@ export default function ProfilePage() {
   const { data, isLoading } = useGetOneUnistoryApiQuery(params.profileID);
 
   return (
-    <div className="text-[white] h-[100vh] mt-[60px] relative pt-10  w-[1640px] px-[164px] my-0 mx-auto">
+    <div className="text-[white] h-[100vh] mt-[60px] relative pt-10  w-[1440px] px-16 my-0 mx-auto ">
       <h1 className="text-[white] text-[48px] leading-[58px] font-['Bebas_Neue'] mt-10">
         PERSONAL DATA
       </h1>
