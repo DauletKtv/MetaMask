@@ -16,7 +16,7 @@ function App() {
     setShowModal(!ethereum);
   }, []);
   return (
-    <div className="App">
+    <div className="App overflow-hidden">
       {showModal && !ethereum ? (
         <div className="checkAlert active">
           {/* <div className="checkAlert-bg"></div> */}
