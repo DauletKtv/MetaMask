@@ -13,14 +13,12 @@ import {
   setName,
   setShowTable,
 } from "../../../redux/loginSlice";
+import { isValidEmail } from "../../../helpers";
 
 export default function RegistrationForm(props: any) {
   const dispatch = useDispatch();
   const globalState = useSelector((state: any) => state.log);
   const { account } = useEthers();
-  function isValidEmail(email: string) {
-    return /\S+@\S+\.\S+/.test(email);
-  }
   useEffect(() => {
     if (
       !isValidEmail(globalState.email) ||

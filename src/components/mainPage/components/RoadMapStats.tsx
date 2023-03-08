@@ -6,7 +6,7 @@ import LoremText from "../../reuseble/LoremText";
 
 export default function RoadMapStats() {
   return (
-    <div className="RoadMapStats">
+    <div className="RoadMapStats  w-[1440px] px-16 my-0 mx-auto">
       <div className="main-text">
         <h1 className="pointer-events-none">
           Explore Your own planet In <span className="text-mask">our New</span>{" "}

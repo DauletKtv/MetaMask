@@ -13,7 +13,7 @@ export default function MainPage() {
   return (
     <div>
       <RoadMapStats />
-      <div className="bottom-part flex justify-between pb-[84px]">
+      <div className="bottom-part flex justify-between pb-[84px] w-[1440px] px-16 mx-auto">
         <RegistrationForm />
         {globalState.showTable && (
           <RightTable

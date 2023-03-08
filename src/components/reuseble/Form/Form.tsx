@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { isValidEmail } from "../../../helpers";
 import "./Form.css";
 type Props = {
   name?: string;
@@ -10,16 +11,12 @@ type Props = {
 export default function Form(props: Props) {
   const [email, setEmail] = useState<string>("");
   const [error, setError] = useState<any>(null);
-  function isValidEmail(email: string) {
-    return /\S+@\S+\.\S+/.test(email);
-  }
   const handleChange = (event: any) => {
     if (!isValidEmail(event.target.value)) {
       setError("Email is invalid");
     } else {
       setError(null);
     }
-
 
     setEmail(event.target.value);
     if (event.target.value == "") {

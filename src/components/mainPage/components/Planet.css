@@ -10,7 +10,7 @@
   background: #1e1e20;
   position: absolute;
   z-index: 1;
-  right: 230px;
+  right: 293px;
   background-blend-mode: luminosity;
 }
 .second-circle {
@@ -66,9 +66,7 @@
   transition: all 3s ease-out;
   pointer-events: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
   z-index: 100;
   user-select: none;
 }

@@ -10,13 +10,23 @@ import {
   setName,
   setShowTable,
 } from "../../redux/loginSlice";
+import { isValidEmail } from "../../helpers";
 const Header = (props: any) => {
   const globalState = useSelector((state: any) => state.log);
   const dispatch = useDispatch();
   const { activateBrowserWallet, account, deactivate } = useEthers();
+
   const connetToWallet = (e: React.UIEvent<HTMLDivElement, UIEvent>) => {
     props.cb();
     activateBrowserWallet();
+
+    if (
+      globalState.name !== "" &&
+      globalState.email !== "" &&
+      isValidEmail(globalState.email)
+    ) {
+      dispatch(setDisabled(false));
+    }
   };
   const disconect = () => {
     deactivate();
@@ -28,7 +38,7 @@ const Header = (props: any) => {
   };
 
   return (
-    <div className="main-header">
+    <div className="main-header w-[1440px] px-16 my-0 mx-auto">
       <NavLink to="/">
         <div className="Logo">Logo</div>
       </NavLink>
