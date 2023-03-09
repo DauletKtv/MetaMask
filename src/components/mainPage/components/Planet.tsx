@@ -42,7 +42,7 @@ export default function Planet(props: any) {
     >
       <div className="second-circle">
         {props.magnitize && (
-          <div className="gap-[8px] font-['Bebas_Neue'] text-[14px] absolute bg-white top-[-14px] left-[183px] w-20 h-[30px] flex items-center justify-center rounded-full">
+          <div className="gap-[8px] z-10 font-['Bebas_Neue'] text-[14px] absolute bg-white top-[-14px] left-[183px] w-20 h-[30px] flex items-center justify-center rounded-full">
             Q1 2022{" "}
             <span className="items-center justify-center w-3 h-3 shadow-2xl bg-white z-10 flex">
               <span className="bg-[#E75626] rounded-full w-[6px] h-[6px] block"></span>
